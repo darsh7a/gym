@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('./Gym\ photo.jpg');
+            color: aliceblue;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+        }
+
+        .left img {
+            height: 94px;
+            width: 133px;
+        }
+
+        .mid {
+            /* border: 2px solid rgb(60, 227, 205); */
+            display: block;
+            width: 40%;
+            margin: 20px 600px;
+
+        }
+
+        .right {
+            /* border: 2px solid rgb(215, 220, 81); */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 20px;
+
+        }
+
+        .navbar {
+            background-color: rgb(36, 36, 159);
+            border-radius: 10px;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 15px;
+
+
+        }
+
+        .navbar li a {
+            color: azure;
+            text-decoration: none;
+            padding: 34px 27px;
+
+        }
+
+    
+    
+
+        .btn {
+            margin: 0px 9px;
+            padding: 4px 14px;
+            color: aliceblue;
+            background-color: black;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai', cursive;
+
+
+        }
+
+        .btn :hover {
+            color: grey;
+
+        }
+
+        .container {
+            border: 2px solid white;
+            padding: 70px;
+            margin: 70px 800px;
+            width: 33%;
+            border-radius: 27px;
+        }
+
+        .city {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-shadow: 10px;
+            text-decoration-line: line-through;
+            background-color: rgba(73, 156, 228, 0.663);
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 401px;
+            padding: 6px;
+            margin: 7px auto;
+            border: 2px solid black;
+            font-size: 15px;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container .btn {
+            display: block;
+            width: 83%;
+            margin: 15px auto;
+        }
+        .container .Eligeble
+        {   margin: 7px auto;
+            display: block;
+            padding-left: 50px;
+
+        }
+        
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="header">
+
+        <!-- left box for logo  -->
+        <div class="left">
+            <img src="./png-transparent-gym-logo.png" alt="Gym logo">
+            <div>
+                Darshan's Fitness
+            </div>
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+
+            <ul class="navbar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About us</a> </li>
+                <li><a href="">Fitness Center</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+
+        </div>
+        <!-- rigth box for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+
+        <div class="container">
+            <h1>Join The Best GYM In the <span class="city">Kolhapur</span> </h1>
+            <form action="Notation.php">
+
+                <div class="form-group">
+                    <input type="" name="" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <input type="" name="" placeholder="Enter your Email Id">
+                </div>
+                <div class="form-group">
+                    <input type="" name="" placeholder="Enter your phone number">
+                </div>
+                <div class="Eligeble">
+                    Enter your Age: <input type="number" name="" placeholder="Enter your Age">
+                </div>
+                 <div class="Eligeble">
+                    Gender: Male <input type="radio" name="Male"> 
+                    Female <input type="radio" name="Male"> 
+                 </div>
+
+                <div class="Eligeble">
+                    Are You Eligeble:<input type="checkbox" name="Gender" placeholder="Gender">
+                </div>
+                <div class="Eligeble">
+                    <input type="reset" name="Gender" placeholder="Gender">
+                </div>
+
+            </form>
+            
+            <button class="btn">
+                Submit
+            </button>
+
+        </div>
+    
+    </header>
+
+</body>
+</html>
